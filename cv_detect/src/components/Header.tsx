@@ -1,14 +1,19 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 
-const WelcomeMessage = () => {
+interface WelcomeMessageProps {
+  title: string;
+  description: string;
+}
+
+const WelcomeMessage: React.FC<WelcomeMessageProps> = ({ title, description }) => {
   return (
     <div>
       <Typography variant="h1" component="h1" gutterBottom>
-        Welcome to our Health Website
+        {title}
       </Typography>
       <Typography variant="body1" gutterBottom>
-        Your go-to resource for all things related to heart health.
+        {description}
       </Typography>
     </div>
   );
