@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         < ResponsiveAppBar />
-        <img src={hospital} className="" alt="logo" />
+        <img src={hospital} className="hero-image" alt="logo" />
     
       </header>
     </div>

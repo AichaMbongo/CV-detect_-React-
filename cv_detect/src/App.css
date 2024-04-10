@@ -13,6 +13,15 @@
   }
 }
 
+.hero-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh; 
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
