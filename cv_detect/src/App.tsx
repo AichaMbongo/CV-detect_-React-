@@ -8,6 +8,7 @@ import logo from './logo.svg';
 import hospital from './hospital.jpg'
 import './App.css';
 import ResponsiveAppBar from './components/AppBar';
+import LandingPage from './components/LandingHeader';
 
 
 function App() {
@@ -15,9 +16,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         < ResponsiveAppBar />
-        <img src={hospital} className="hero-image" alt="logo" />
-    
       </header>
+      <img src={hospital} className="hero-image" alt="logo" />
+      <div className="overlay-text">
+          <LandingPage />
+        </div>
     </div>
   );
 }
