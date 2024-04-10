@@ -1,11 +1,18 @@
 import React from 'react';
 import WelcomeMessage from './Header';
-import Button from './Button';
+import Button from '@mui/material/Button';
+import { styled } from '@mui/material/styles';
+
+const CustomButton = styled(Button)({
+  backgroundColor: '#f50057',
+  color: '#fff',
+  '&:hover': {
+    backgroundColor: '#ff4081',
+  },
+});
 
 const LandingPage = () => {
-  // Define handleButtonClick function
   const handleButtonClick = () => {
-    // Your button click logic here
     console.log('Button clicked!');
   };
 
@@ -15,7 +22,9 @@ const LandingPage = () => {
         title="Welcome to our Health Website"
         description="Your go-to resource for all things related to heart health."
       />
-      <Button label="Get Started" onClick={handleButtonClick} className="cta-button" />
+      <CustomButton variant="contained" onClick={handleButtonClick}>
+        Get Started
+      </CustomButton>
     </div>
   );
 };
