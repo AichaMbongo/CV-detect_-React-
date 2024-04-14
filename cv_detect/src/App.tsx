@@ -6,6 +6,7 @@ import '@fontsource/roboto/700.css';
 
 import logo from './logo.svg';
 import hospital from './hospital.jpg'
+import heart from './heart.webp'
 import './App.css';
 import ResponsiveAppBar from './components/AppBar';
 import LandingPage from './components/LandingHeader';
@@ -18,7 +19,7 @@ function App() {
       <header className="App-header">
         < ResponsiveAppBar />
       </header>
-      <img src={hospital} className="hero-image" alt="logo" />
+      <img src={heart} className="hero-image" alt="logo" />
       <div className="overlay-text">
           <LandingPage />
         </div>
